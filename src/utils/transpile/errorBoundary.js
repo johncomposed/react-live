@@ -8,7 +8,7 @@ const errorBoundary = (Element, errorCallback) => {
 
     render() {
       return typeof Element === 'function' ?
-        <Element/> :
+        <Element {...this.props}/> :
         Element;
     }
   }
